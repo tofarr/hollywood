@@ -34,8 +34,8 @@ function App() {
           {isComplete ? "You're In!" : message}
         </h1>
         <div className="progress-bar">
-          <div
-            className="progress-bar-fill"
+<div
+            className={`progress-bar-fill ${isComplete ? 'complete' : ''}`}
             style={{ width: `${progress}%` }}
           ></div>
         </div>
